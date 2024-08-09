@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@400,600,700;&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 2%, 58%);
+--black-Grey: hsl(0, 1%, 23%);
+--dark-Grey: hsl(0, 1%, 17%);
+
+}
+
+body{
+    background-color: var(--dark-Grey);
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100dvh - 1px);
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black-Grey);
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding: 1.5rem;
+    border-radius: 9px;
+    box-shadow: 5px 5px 5px solid var(--black-Grey);
+}
+
+.container img{
+width:20%;
+clip-path: circle();
+margin-inline:auto;
+display: block;
+}
+
+h2{
+    text-align: center;
+    color: var(--White);
+    margin-bottom: 13px;
+    font-family: 700;
+}
+
+.location{
+    color: var(--Green);
+    text-align: center;
+    margin-bottom: 17px;
+    font-weight: 600;
+}
+
+p{
+    color:var(--Grey);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.button-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:1rem;
+    justify-content: center;
+
+}
+
+button{
+    background-color: var(--Grey);
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid var(--Grey);
+    cursor: pointer;
+}
+
+button:last-child{
+    border-bottom: 1rem;
+}
+
+button:hover{
+    background-color:var(--Green);
+
+}
+ 
+button a{
+    text-decoration: none;
+    color: var(--White);
+    font-size: 14px;
+cursor: pointer;
+font-weight: 700;
+}
+
+button a:hover{
+    color:black;
+
+} 
+.last-button{
+    margin-bottom: 1rem;
+}
+/* 
+.attribution {
+
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+ */
+@media(max-width:500px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(min-width:501px){
+    .container{
+        width:350px
+    }
+}
